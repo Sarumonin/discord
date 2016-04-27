@@ -21,7 +21,19 @@
   <body>
    <div class="wrapper">
 <div class="container">
-    
+    <audio id="sound" loop="loop" autoplay="autoplay" controls="controls"> <source src="http://files.enjin.com/692771/tss.mp3">  </audio>
+    <style>
+    #sound {
+            top: 100px !important;
+            position: fixed !important;
+            z-index: 99 !important;
+            left: 2px;
+            display: block;
+        }</style>
+        <script>
+  var sound = document.getElementById("sound");
+            sound.volume = .2;</script>
+
     <div class="owl">
         <span class="head"><span class="brows"><span class="brow-left">_</span><span class="brow-right">_</span></span><br/>
         {<span class="eye-left">0</span><span class="nose">,</span><span class="eye-right">0</span>}</span><br/>
